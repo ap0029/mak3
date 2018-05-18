@@ -1,0 +1,181 @@
+<div data-page="afspraak" class="page" data-script="assufree/afspraak" data-runner="afspraak" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="left mlink"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Afspraak</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p class="silver-text">Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="appointment_form" action="#">
+            <div class="content-block asf-sec">
+            <div class="row">
+                <div class="col-100 with-top list-block info-sec main-text">
+                    
+                    <p class="text-left asf-text stel-text silver-text">Wilt u een afspraak maken voor een eerste gesprek? Wij informeren u graag over de mogelijkheden. 
+                        <a href="#" data-popover=".popover-about" class="link open-popover">
+                        <i class="fa fa-question-circle"></i></a>
+                    </p>
+                    
+                    <ul class="text-left">
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <p class="text-left stel-text silver-text"><i style="width:13px;color:red !important">* </i> <span class="velden">verplichte velden</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-user"></i><span class="required">*</span></div>
+                                <div class="item-inner">
+                                <!--     <div class="item-title label">Naam<span class="required">*</span></div> -->
+                                    <div class="item-input"> <input id="name" name="name" type="text" placeholder="Uw naam" value=""> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-envelope"></i><span class="required">*</span></div>
+                                <div class="item-inner">
+                               <!--      <div class="item-title label">Email<span class="required">*</span></div> -->
+                                    <div class="item-input"> <input id="email" name="email" type="email" placeholder="Uw email" value=""> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-newspaper-o"></i><span class="required">*</span></div>
+                                <div class="item-inner">
+                                <!--     <div class="item-title label">Postcode<span class="required">*</span></div> -->
+                                    <div class="item-input"> <input id="postcode" name="postcode" type="text" placeholder="Uw postcode"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-home"></i><span class="required">*</span></div>
+                                <div class="item-inner">
+                               <!--      <div class="item-title label">Huisnr<span class="required">*</span></div> -->
+                                    <div class="item-input"> <input id="house_number" name="house_number" type="text" placeholder="Uw huisnummer"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-phone"></i><span class="required">*</span></div>
+                                <div class="item-inner">
+                              <!--       <div class="item-title label">Telefoon<span class="required">*</span></div> -->
+                                    <div class="item-input"> <input id="phone" name="phone" type="text" onkeypress="if ( isNaN( this.value + String.fromCharCode( event.keyCode ) ) )
+						return false;" placeholder="Uw telefoonnummer" value=""> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-building"></i></div>
+                                <div class="item-inner">
+                                 <!--    <div class="item-title label">Bedrijf</div> -->
+                                    <div class="item-input"> <input id="company" name="company" type="text" placeholder="Uw bedrijf" value=""> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="display:none">
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-map-marker"></i></div>
+                                <div class="item-inner">
+                                <!--    <div class="item-title label">Plaats</div> -->
+                                    <div class="item-input"> <input id="plaats" required="required" name="plaats" type="text" placeholder="Uw plaats"
+                                        /> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 with-top list-block btm-sec">
+                    <p class="with-top text-left silver-text">Waarvoor wenst u een afspraak te maken?</p>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input"> 
+                                <input id="appointment" name="appointment" id="topic" name="topic" type="text" placeholder=" Vul hier uw toelichting in " />
+                            </div>
+                        </div>
+                    </div> 
+		        </div>
+            </div>
+            <div class="row">
+                <div class="col-100 with-top list-block date-sec">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="label">Datum voor een afspraak</div>
+                                    <div class="item-after "> <input id="calendar-default" name="calendar_default" type="text" placeholder="Selecteer de datum" readonly> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 with-top list-block btm-sec">
+                    <p class="with-top text-left silver-text">Gewenste tijd</p>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input"> 
+                                <input id="time" name="time" type="text" placeholder=" Vul hier uw toelichting in " />
+                            </div>
+                        </div>
+                    </div> 
+		        </div>
+            </div>
+            <div class="row">
+                <div class="col-100 with-top list-block new-sec">
+                    <ul class="text-left">
+                        <li>
+                            <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                <select id="is_client" name="is_client">
+                                </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Bent u al klant?</div>
+                                        <div class="item-after">Maak uw keuze</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 with-top list-block btm-sec">
+                    <p class="with-top text-left silver-text">Eventuele vragen of opmerkingen</p>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input"> 
+                                <textarea id="comment" name="comment" type="text" placeholder=" Vul hier uw toelichting in "></textarea>
+                            </div>
+                        </div>
+                    </div>
+		        </div>
+            </div>
+        </div>
+    </form>
+	<div class="row content-block" style="margin-top: 0px">
+	    <div class="col-100">
+		<button id="versturen" class="button button-big button-raised button-fill col-100"> Versturen </button>
+	    </div>
+	</div>
+    </div>
+</div>

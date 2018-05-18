@@ -1,0 +1,158 @@
+<div class="col-100" data-type="fragment" data-script="berichten_profiel_fragment">
+    <form id="post-profile-form" action="#">
+        <div class="content-block">
+            <div class="row">
+                <p class="text-left no-bottom-margin"> Wilt u maandelijks kort nieuws op maat ontvangen? Dan kunt u hier uw berichtenprofiel instellen of wijzigen.
+		</p>
+                <div class="col-100 list-block new-list no-bottom-margin">
+                    <ul>
+                        <li>
+                            <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+				                <select id="target_audience" name="target_audience"> </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Doelgroep</div>
+                                        <div class="item-after">Maak uw keuze</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+				<select id="sector" name="sector"> </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Sector</div>
+                                        <div class="item-after">Maak uw keuze</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+				<select id="company_size" name="company_size"> </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">Bedrijfsomvang</div>
+                                        <div class="item-after">Maak uw keuze</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 list-block new-list no-bottom-margin">
+                    <ul>
+                        <li> <label class="label-radio item-content">
+				<input id="i_am" type="radio" name="client" value="true">
+				<div class="item-media">
+				    <i class="icon icon-form-radio"></i>
+				</div>
+				<div class="item-inner">
+				    <div class="item-title">Ik ben klant</div>
+				</div>
+			    </label> </li>
+                        <li> <label class="label-radio item-content">
+				<input id="i_am_not" type="radio" name="client" value="false">
+				<div class="item-media">
+				    <i class="icon icon-form-radio"></i>
+				</div>
+				<div class="item-inner">
+				    <div class="item-title">Ik ben geen klant</div>
+				</div>
+			    </label> </li>
+                    </ul>
+                    <div class="customer-info-block">
+                        <div class="popover popover-about">
+                            <div class="popover-angle"></div>
+                            <div class="popover-inner">
+				<div class="content-block">
+				    <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+				</div>
+                            </div>
+                        </div>
+                        <div class="text-left">
+                            <p class="content-block custom-text"> Voor optimaal gebruikersgemak gelieve orderstaand uw gegevens aan te vullen.
+                                <a href="#" data-popover=".popover-about" class="link open-popover">
+				    <i class="fa fa-question-circle"></i></a> 
+                            </p>
+                        </div>
+                        <ul class="text-left">
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"> <i class="fa fa-user"></i> </div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Naam</div>
+                                        <div class="item-input"> <input id="name" required="required" name="name" type="text" placeholder="Uw naam"
+									/> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-building"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Bedrijf</div>
+                                        <div class="item-input"> <input id="company" required="required" name="company" type="text" placeholder="Uw bedrijfsnaam"
+									/> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-envelope"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Email</div>
+                                        <div class="item-input"> <input id="email" required="required" name="email" type="email" placeholder="Uw email"
+									/> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-home"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">Huisnummer</div>
+                                    <div class="item-input"> <input id="house_number" name="house_number" type="text" placeholder="Uw huisnummer"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-newspaper-o"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-title label">Postcode</div>
+                                    <div class="item-input"> <input id="postcode" name="postcode" type="text" placeholder="Uw postcode"> </div>
+                                </div>
+                            </div>
+                        </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-phone"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Telefoon</div>
+                                        <div class="item-input"> <input id="phone" required="required" name="phone" type="text" placeholder="Uw telefoonnummer"
+									/> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row custom-mg">
+                <div class="col-80 with-top">
+                    <p>Ik meld me aan voor de nieuwsbrief.</p>
+                </div>
+                <div class="col-20">
+		    <label class="label-switch">
+			<input type="checkbox" name="newsletter" value="true"/>
+			<div class="checkbox"> </div>
+		    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

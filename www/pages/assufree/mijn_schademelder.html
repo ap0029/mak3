@@ -1,0 +1,199 @@
+<div data-page="schademelder" class="page" data-script="assufree/schademelder" data-runner="run_mijn_schademelder">
+    <div class="navbar navbar-fixed">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Mijn Schademelder</div>
+        </div>
+    </div>
+        
+    <div class="page-content">
+        <div id="main-content">
+            <div class="row">
+                <div class="col-100 content-block with-top list-block">
+                    <label class="pull-left"><b>Meld hier uw schade</b></label> 
+                    <button id="step1" class="button button-big button-raised button-fill col-100"> Stap 1: Vul uw gegevens in </button>
+                </div>
+            </div>
+            <!--form id="question_form" action="#"-->
+                <div class="row">
+                    <div class="col-100 content-block with-top list-block asf-sec">
+                        <ul class="text-left">
+                            <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <p class="text-left stel-text silver-text"><i style="width:13px;color:red !important">* </i> <span class="velden">verplichte velden</span></p>
+                            </div>
+                        </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-user"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Naam<span class="required">*</span></div>
+                                        <div class="item-input"> <input id="name" name="name" type="text" placeholder="Uw naam"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-envelope"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Email<span class="required">*</span></div>
+                                        <div class="item-input"> <input id="email" name="email" type="email" placeholder="Uw email"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-newspaper-o"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Postcode<span class="required">*</span></div>
+                                        <div class="item-input"> <input id="postcode" name="postcode" type="text" placeholder="Uw postcode"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-home"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Huisnummer<span class="required">*</span></div>
+                                        <div class="item-input"> <input id="house_number" name="house_number" type="text" placeholder="Uw huisnummer"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-phone"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Telefoon<span class="required">*</span></div>
+                                        <div class="item-input"> <input id="phone" name="phone" type="text" placeholder="Uw telefoonnummer"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-mobile"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Polisnummer<br>(optioneel)</div>
+                                        <div class="item-input"> <input id="police_number" name="police_number" type="text" placeholder="Uw Polisnummer"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-100 content-block list-block with-top">
+                        <ul>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Dichtbij">
+                                    <select id="damage_report" name="damage_report">
+                                        <option disabled selected>Maak uw keuze</option>
+                                        <option value="zakelijk">zakelijk</option>
+                                        <option value="particulier">particulier</option>
+                                    </select>
+                                    <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title">De schademelding</div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-100 content-block with-top list-block" style="position: relative;z-index: 100;">
+                        <label class="pull-left"><b>Soort schade</b></label>
+                        <a id="cell" href="#" class=" button button-big col-100"> Aansprakelijkeid </a>
+                    </div>
+                    <div id="kenteken" class="col-100 content-block with-top list-block asf-sec" style="display:none">
+                        <ul class="text-left">
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-phone"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Kenteken</div>
+                                        <div class="item-input"> <input id="license_plate" name="license_plate" type="text" placeholder="Uw kenteken"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-100 content-block with-top">
+                        <div class="col-80 with-top pull-left">
+                            <p class="geefGPS">Geef GPS locate door</p>
+                        </div>
+                        <div class="col-20 pull-left">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title"></div>
+                                    <div class="item-input"> 
+                                        <label class="label-switch geolocationSw">
+                                            <input type="checkbox" name="geolocation" value="true"/>
+                                            <div class="checkbox"> </div>
+                                        </label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-100 content-block with-top list-block">
+                        <label class="pull-left"><b>Toelichting schade</b></label> 
+                        <textarea id="explaination" style="border:solid 1px #178c82;"></textarea>
+                    </div>
+                    <div class="col-100 with-top list-block date-sec">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner content-block">
+                                        <p class="dateLable">Schadedatum</p>
+                                        <div class="item-after "> <input id="calendar-default" class="txtRight" name="calendar_default" type="text" placeholder="Selecteer de datum"
+                                        readonly data-back-on-select="true"> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <!--/form-->
+            <div class="row" style="margin-top:100px">
+                <div class="col-100 content-block with-top list-block"> 
+                    <button id="step2" style="text-transform: lowercase !important; " class="button button-big button-raised button-fill col-100" data-balloon-length="fit" data-balloon-visible data-balloon="Maak een foto van uw ingevulde en ondertekende schadeformulier (voor- en achterzijde). Maak indien gewesnst foto's van de schadesituatie. Let op: klik meeerdere malen op de button hieronder om meer foto's te maken." data-balloon-pos="up"> Stap 2: Voeg afbeeldingen toe </button></div>
+            </div>
+            <div class="row" style="margin-top:20px; margin-bottom:20px">
+                <!--<div class="col-100 content-block with-top list-block"> <img width="100%" height="100%" src="assets/images/logo-AssuFree.png" /> </div>-->
+                <div id="image_listing" class="col-100 content-block with-top list-block"> 
+                    <div style="display:none" class="col-100" id="home-logo"> 
+                        <img width="100%" height="100%" src="assets/images/logo.png" /> 
+                    </div><br>
+                    <div id="initialImage" class="col-100 repeat-image">  
+                        <div style="" class="pRelative">
+                            <img width="100%" height="100%" src="assets/images/logo.png" />
+                        </div>
+                    </div>
+                    <div style="display:none" class="col-100 repeat-image">  
+                        <div class="posRelative">
+                            <a href="javascript:void(0)" class="closeIconTop"><i class="fa fa-2x fa-times-circle-o"></i></a>
+                            <img width="100%" height="100%" src="assets/images/logo.png" />
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 content-block with-top list-block"> <button id="step3" class="button button-big button-raised button-fill col-100"> Stap 3: Plaats handtekening </button></div>
+            </div>
+            <div class="row">
+                <div id="drawing-foto" class="col-100">
+                    <div id="view-surface" class="pic-upload" style="display: block"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 content-block with-top list-block"> <button id="step4" class="button button-big button-raised button-fill col-100"> Stap 4: Bekljk en verstuur schademelding </button></div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="MailFoto_mobilegridcell_8"></div>
+</div>

@@ -1,0 +1,8 @@
+app_identifier "com.yesco.app.Rhenen" # The bundle identifier of your app
+apple_id "info@yes-co.nl" # Your Apple email address
+
+itc_team_id "WYT22JA76V" # iTunes Connect Team ID
+
+team_id "WYT22JA76V" #team id
+
+

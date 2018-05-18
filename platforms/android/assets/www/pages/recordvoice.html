@@ -1,0 +1,38 @@
+<div data-page="recordvoice" class="page" data-script="recordvoice" data-runner="recordvoice" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="mlink"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Stuur voice berichten</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div data-role="content" id="recordvoice_mobilecontainer" name="recordvoice_mobilecontainer" class="recordvoice_mobilecontainer" 
+				dsid="recordvoice_mobilecontainer" data-theme="f">
+            <div id="recorder-holder" class="vertical justify-content-center">
+                <button id="btrecord" onclick="startRecording()" class="inactive-btn button button-big button-raised button-fill col-100"> Stuur ons een voicebericht </button>
+                <div id="rec-msg">
+                    <h3>Druk op de knop om geluidsopname te starten</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notify-popup-recorder">
+        <h4>Opname succesvol lokaal opgeslagen</h4>
+        <div class="horizontal" id="pop-btholder">
+            <a href="javascript:hideModal()" class="flexed btrecorder-mail enabled-link-btn button button-big button-raised button-fill col-100">Annuleer</a>
+            <a href="javascript:playAudio()" class="flexed btrecorder-mail enabled-link-btn lst-btn button button-big button-raised button-fill col-100">Luister</a>
+            <a href="javascript:sendMail()" class="flexed btrecorder-mail enabled-link-btn lst-btn button button-big button-raised button-fill col-100">Email</a>
+        </div>
+    </div>
+</div>

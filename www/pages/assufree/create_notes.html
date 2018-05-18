@@ -1,0 +1,23 @@
+<div data-page="schademelder" class="page" data-script="assufree/schademelder" data-runner="mijn_schademelder">
+    <div class="navbar navbar-fixed">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Plaats handtekening</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div id="canvas" class="row" style="display:none">
+            <div class="col-100 content-block with-top">
+                <div id="toolbar">
+                    <a href="javascript:clearAll()" class="tlb-btn"><i class="fa fa-file-o tlb-icon"></i></a>
+                    <a href="javascript:drawingMode()" id="btpencil" class="tlb-btn active"><i class="fa fa-pencil tlb-icon"></i></a>
+                    <a href="javascript:eraseMode()" id="bteraser" class="tlb-btn"><i class="fa fa-eraser tlb-icon"></i></a>
+                    <a href="javascript:emailCanvas()" class="tlb-btn"><i class="fa fa-save tlb-icon"></i></a>
+                </div>
+                <div id="surface"></div>
+            </div>
+        </div>
+    </div>
+</div>

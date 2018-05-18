@@ -1,0 +1,115 @@
+<div data-page="stel_een_vraag" class="page" data-script="stel_een_vraag" data-runner="steleenvraag">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Stel een vraag</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+                <div class="popover popover-about">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                    <div class="content-block">
+                        <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+                    </div>
+                    </div>
+                </div>
+    <div class="page-content">
+        <form id="question_form" action="#">
+            <div class="row">
+                
+                <div class="col-100 content-block with-top list-block main-text">
+                    <p class="text-left stel-text">Heeft u een vraag, vul dan onderstaand formulier in.
+                        <a href="#" data-popover=".popover-about" class="link open-popover">
+                        <i class="fa fa-question-circle"></i></a> 
+                    </p>
+                    <ul class="text-left">
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-user"></i></div>
+                                <div class="item-inner">
+                                   <!-- <div class="item-title label">Naam</div>-->
+                                    <div class="item-input"> <input id="name" name="name" type="text" placeholder="Uw naam"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-envelope"></i></div>
+                                <div class="item-inner">
+                                  <!--  <div class="item-title label">Email</div>-->
+                                    <div class="item-input"> <input id="email" name="email" type="email" placeholder="Uw email"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-phone"></i></div>
+                                <div class="item-inner">
+                                  <!--  <div class="item-title label">Telefoon</div>-->
+                                    <div class="item-input"> <input id="phone" name="phone" type="text" placeholder="Uw telefoonnummer"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-building"></i></div>
+                                <div class="item-inner">
+                                  <!--  <div class="item-title label">Bedrijf</div>-->
+                                    <div class="item-input"> <input id="company" name="company" type="text" placeholder="Uw bedrijf"> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-100 content-block with-top list-block media-list stel-sec">
+                    <ul>
+                        <li>
+                            <a href="#" class="item-link smart-select update-alert" data-searchbar="true" data-back-text=" " data-searchbar-placeholder="Zoeken">
+                            <select id="question_topic" name="question_topic" multiple="multiple">
+                            </select>
+                            <div class="item-text"> Waarop heeft uw vraag betrekking? </div>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title"> Maak uw keuze </div>
+                                            <div class="item-after"> <span class="badge">0</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-100 content-block with-top list-block">
+                    <p class="with-top text-left">Stel uw vraag</p>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-input"> 
+                                <textarea id="question" name="question" type="text" placeholder=" Vul hier uw toelichting in "></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">Stel uw vraag</div>
+                                    <div class="item-input"> <input id="question" name="question" type="text" placeholder=" Vul hier uw toelichting in "> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-100 content-block with-top list-block"> <button id="question_submit" class="button button-big button-raised button-fill col-100"> Versturen </button>                </div>
+        </div>
+    </div>
+</div>

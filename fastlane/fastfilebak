@@ -1,0 +1,29 @@
+platform :ios do
+  desc "Deploy ios app on the appstore"
+
+  lane :deploy do
+    get_push_certificate(
+	  generate_p12: true,
+	  save_private_key: true
+    )
+    match(
+      type: "appstore",
+      git_url: "https://apptomorrow:{gitpass}@github.com/apptomorrow/cert-management.git",
+      git_branch: "VanWestrhenen"
+    )
+    cordova(
+      platform: 'ios',
+      cordova_prepare: false,
+      team_id: '{teamId}'
+    )
+	ENV["DELIVER_ITMSTRANSPORTER_ADDITIONAL_UPLOAD_PARAMETERS"] = "-t DAV"
+    appstore(
+      ipa: ENV['CORDOVA_IOS_RELEASE_BUILD_PATH'],
+      submit_for_review: true,
+      automatic_release: false,
+      force: true,
+      skip_screenshots: true,
+      app_version: '{extversion}'
+    )
+  end
+end

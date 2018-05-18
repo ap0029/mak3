@@ -1,0 +1,209 @@
+<div data-page="enquete" class="page" data-script="enquete" data-runner="enquete" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only open-indicator"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Enquête</div>
+        </div>
+    </div>
+     <div class="modal-overlay"> </div>
+     <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="content-block">
+                <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+    <form id="survey_form" action="#">
+        <div class="row">
+            
+            <div class="col-100 content-block with-top list-block main-text">
+                <p class="text-left stel-text">Uw mening is belangrijk. Laat weten wat u van ons vindt, zo kunnen wij onze diensten verbeteren. 
+                    <a href="#" data-popover=".popover-about" class="link open-popover">
+                    <i class="fa fa-question-circle"></i></a> 
+                </p>
+                <ul class="text-left">
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="fa fa-user"></i></div>
+                            <div class="item-inner">
+                              <!--  <div class="item-title label">Naam</div>-->
+                                <div class="item-input"> <input id="name" name="name" type="text" placeholder="Uw naam"> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="fa fa-envelope"></i></div>
+                            <div class="item-inner">
+                             <!--   <div class="item-title label">Email</div>-->
+                                <div class="item-input"> <input id="email" name="email" type="email" placeholder="Uw email"> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="fa fa-phone"></i></div>
+                            <div class="item-inner">
+                              <!--  <div class="item-title label">Telefoon</div>-->
+                                <div class="item-input"> <input id="phone" name="phone" type="text" placeholder="Uw telefoonnummer"> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"><i class="fa fa-building"></i></div>
+                            <div class="item-inner">
+                              <!--  <div class="item-title label">Bedrijf</div>-->
+                                <div class="item-input"> <input id="company" name="company" type="text" placeholder="Uw bedrijf"> </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-100 content-block with-top list-block en-list media-list main-text">
+                <ul>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_1" name="survey_select_1">
+                            </select>
+                            <div class="item-text"> Hoe vaak heeft u afgelopen jaar contact gehad met ons kantoor? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_2" name="survey_select_2">
+                            </select>
+                            <div class="item-text"> Wat vindt u van de kwaliteit van onze diensten? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_3" name="survey_select_3">
+                            </select>
+                            <div class="item-text"> Wat is uw algemene indruk van ons kantoor? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_4" name="survey_select_4">
+                            </select>
+                            <div class="item-text"> Bent u van plan binnenkort weer gebruik te maken van onze diensten? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_5" name="survey_select_5">
+                            </select>
+                            <div class="item-text"> Zo ja, van welke dienst? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_6" name="survey_select_6">
+                            </select>
+                            <div class="item-text"> Zo ja, op welke termijn? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                        <select id="survey_select_7" name="survey_select_7">
+                            </select>
+                            <div class="item-text"> Mogen wij naar aanleiding van deze enquête contact met u opnemen? </div>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title"> Maak uw keuze </div>
+                                        <div class="item-after"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-100 content-block with-top list-block">
+                <p class="with-top text-left">Tips of ideeën voor verbetering</p>
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input"> 
+                                        <textarea id="comment" name="comment" type="text" placeholder=" Vul hier uw toelichting in "></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> 
+                <!--<ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">Tips of ideeen</div>
+                                <div class="item-input"> <input id="comment" name="comment" type="text" placeholder=" Vul hier uw toelichting in "> </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+        </form>
+        <div class="row">
+            <div class="col-100 content-block with-top list-block"> <button id="survey_submit" class="button button-big button-raised button-fill col-100"> Versturen </button> </div>
+        </div>
+    </div>
+</div>

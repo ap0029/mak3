@@ -1,0 +1,53 @@
+<div data-page="team_alphabetic" class="page" data-script="notaris/team_alphabetic" data-runner="team_alphabetic" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/over_ons.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Het team</div>
+        </div>
+    </div>
+    <div class="page-content customListStyle">
+	<div id="employees-list" class="cl-100 list-block contacts-block with-top search-area">
+	    <div class="box jplist">
+		<div class="jplist-panel box panel-top">
+		    <div class="text-filter-box search-box">
+			<input 
+			    id="search-field"
+			    data-path="#name" 
+			    type="text" 
+			    value="" 
+			    placeholder="naam" 
+			    data-control-type="textbox" 
+			    data-control-name="title-filter" 
+			    data-control-action="filter"
+			    />
+			<i class="fa fa-search jplist-icon search-filter"></i>
+		    </div>
+		</div>
+	    </div>
+	    <div class="list-group">
+		<ul class="newListing employees-list">
+		    <li class="list-group-title" style="display: none;">A</li>
+		    <li class="repeat-employees" style="display: none;">
+			<a href="#" class="item-link item-content">
+			    <div class="item-media">
+				<img src="assets/images/no-image.jpg" alt=""/>
+			    </div>
+			    <div class="item-inner">
+				<div class="item-title-row">
+				    <div class="item-title" id="name"></div>
+				    <div class="item-after"></div>
+				</div>
+				<!--
+				<div class="item-subtitle">Beatles</div>
+				-->
+				<div class="item-text">Lorem ipsum dolor sit amet...</div>
+			    </div>
+			</a>
+		    </li>
+		</ul>
+	    </div>
+	</div>
+    </div>
+</div>

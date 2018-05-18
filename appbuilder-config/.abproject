@@ -1,0 +1,85 @@
+{
+  "Framework": "Cordova",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "ProjectName": "Generic Template",
+  "ProjectGuid": "9c095c53-64a8-4d2d-8056-2049d3d62483",
+  "projectVersion": "1",
+  "AppIdentifier": "com.yesco.app.Rhenen",
+  "DisplayName": "Rhenen",
+  "Author": "Yes",
+  "Description": "Generic v3",
+  "BundleVersion": "18.9",
+  "AndroidVersionCode": "2",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [
+    "remote-notification"
+  ],
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{42a9378b-3b78-4669-8c61-77d9fe35252e}",
+  "WP8ProductID": "{53e3fee4-6fab-4904-97d8-bae4681a6613}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.GenericTemplate",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CordovaPluginVariables": {
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": "Camera wordt gebruikt om afbeeldingen te maken ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Foto galerij wordt gebruikt om de door u geselecteerde afbeeldingen te versturen"
+    },
+    "cordova-plugin-geolocation": {
+      "GEOLOCATION_USAGE_DESCRIPTION": "Voor het schademelder formulier hebben we uw GPS locatie nodig voor locatiebepaling"
+    },
+    "com.phonegap.plugins.barcodescanner": {
+      "CAMERA_USAGE_DESCRIPTION": "QR code scanner om direct naar web pagina's te kunnen gaan"
+    },
+    "cordova-plugin-media": {
+      "MICROPHONE_USAGE_DESCRIPTION": "Voor de zend foto functionaliteit maken we gebruik van uw camera om afbeeldingen te kunnen maken"
+    },
+    "com.synconset.imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "Voor het plaatsen van een handtekening in het schademelder formulier"
+    }
+  },
+  "iOSDeploymentTarget": "8.0",
+  "CorePlugins": [
+    "com.ionic.keyboard@2.0.1",
+    "com.phonegap.plugins.barcodescanner@6.0.5",
+    "com.synconset.imagepicker@2.1.7",
+    "com.telerik.plugins.wkwebview@0.6.10",
+    "cordova-plugin-camera",
+    "cordova-plugin-device",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-file",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-media",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-whitelist",
+    "nl.x-services.plugins.actionsheet@2.3.3",
+    "nl.x-services.plugins.socialsharing@5.1.1",
+    "nl.x-services.plugins.toast@2.5.2",
+    "org.apache.cordova.labs.keyboard"
+  ]
+}

@@ -1,0 +1,79 @@
+<div data-page="changepass" class="page" data-script="makelaardij/changepass" data-runner="changepass" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/makelaardij/login.html" style="height:44px;" data-destination="app_home" class="left"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="crct-position">Change Password</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p class="silver-text">Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="login_form" action="#">
+            <div class="content-block asf-sec">
+                <div class="row">
+                    <div class="col-100 with-top list-block info-sec main-text">
+                        <ul class="text-left">
+                            <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-user"></i></div>
+                                    <div class="item-inner">
+                                    <!--     <div class="item-title label">Naam<span class="required">*</span></div> -->
+                                        <div class="item-input"> <input id="rsusername" class="padded-input" name="rsusername" type="text" placeholder="Username" value=""> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-key"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input"> 
+                                            <input id="rs_oldpassword" class="padded-input" name="rs_oldpassword" 
+                                            type="password" placeholder="Enter Current Password" value=""> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-key"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input"> 
+                                            <input id="rs_newpassword" class="padded-input" name="rs_newpassword" 
+                                            type="password" placeholder="Enter New Password" value=""> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="rscpasssection">
+                                <div id="rscpass-holder" class="item-content bordered-input red-border">
+                                    <div class="item-media"><i id="rscpass-icon" class="fa fa-ban red-color"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input"> 
+                                            <input id="rscpassword" class="padded-input red-color" name="rscpassword" 
+                                            type="password" placeholder="Confirm New Password" value=""> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row content-block" style="margin-top: 0px">
+            <div class="col-100">
+            <button id="changepassword" disabled=true class="button button-big button-raised button-fill col-100"> Bevestigen </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,221 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "com.phonegap.plugins.barcodescanner": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/com.phonegap.plugins.barcodescanner/6.0.5"
+        },
+        "is_top_level": true,
+        "variables": {
+            "CAMERA_USAGE_DESCRIPTION": "QR code scanner om direct naar web pagina's te kunnen gaan"
+        }
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.synconset.imagepicker": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/com.synconset.imagepicker/2.1.7"
+        },
+        "is_top_level": true,
+        "variables": {
+            "PHOTO_LIBRARY_USAGE_DESCRIPTION": "Voor het plaatsen van een handtekening in het schademelder formulier"
+        }
+    },
+    "cordova-plugin-camera": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-camera"
+        },
+        "is_top_level": true,
+        "variables": {
+            "CAMERA_USAGE_DESCRIPTION": "Camera wordt gebruikt om afbeeldingen te maken",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": "Foto galerij wordt gebruikt om de door u geselecteerde afbeeldingen te versturen"
+        }
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {
+            "GEOLOCATION_USAGE_DESCRIPTION": "Voor het schademelder formulier hebben we uw GPS locatie nodig voor locatiebepaling"
+        }
+    },
+    "cordova-plugin-media": {
+        "source": {
+            "type": "local",
+            "path": "/tmp/builds/wHJYUGtUErPfyWtQLq/app/Plugins/cordova-plugin-media-master"
+        },
+        "is_top_level": true,
+        "variables": {
+            "MICROPHONE_USAGE_DESCRIPTION": "Voor de zend foto functionaliteit maken we gebruik van uw camera om afbeeldingen te kunnen maken"
+        }
+    },
+    "cordova-plugin-file": {
+        "source": {
+            "type": "local",
+            "path": "/tmp/builds/wHJYUGtUErPfyWtQLq/app/Plugins/cordova-plugin-file-master"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "com.ionic.keyboard": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/com.ionic.keyboard/2.0.1"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "com.telerik.plugins.wkwebview": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/com.telerik.plugins.wkwebview/0.6.10"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-splashscreen": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-splashscreen"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "nl.x-services.plugins.actionsheet": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.actionsheet/2.3.3"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "nl.x-services.plugins.socialsharing": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.socialsharing/5.1.1"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "nl.x-services.plugins.toast": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.toast/2.5.2"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "org.apache.cordova.labs.keyboard": {
+        "source": {
+            "type": "local",
+            "path": "/Users/builder/BpcTooling/Cordova3/6.4.0/CorePlugins/org.apache.cordova.labs.keyboard"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "com.telerik.cordovaPlatformSpecificFiles": {
+        "source": {
+            "type": "local",
+            "path": "/tmp/builds/wHJYUGtUErPfyWtQLq/app/Plugins/cordova-platform-specific-files"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "cordova-plugin-inappbrowser-modified-1.2.0": {
+        "source": {
+            "type": "local",
+            "path": "/tmp/builds/wHJYUGtUErPfyWtQLq/app/Plugins/cordova-plugin-inappbrowser-modified-1.2.0"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    },
+    "onesignal-cordova-plugin": {
+        "source": {
+            "type": "local",
+            "path": "/tmp/builds/wHJYUGtUErPfyWtQLq/app/Plugins/onesignal-cordova-plugin"
+        },
+        "is_top_level": true,
+        "variables": {
+            "WKWEBVIEW_SERVER_PORT": "12344"
+        }
+    }
+}

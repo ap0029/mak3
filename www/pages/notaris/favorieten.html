@@ -1,0 +1,47 @@
+<div data-page="favorieten" class="page" data-script="notaris/favorieten" data-runner="favorieten" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/over_ons.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Favorieten</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-100 list-block with-top  content-block search-area">
+                <div id="demo" class="box jplist">
+                    <!-- panel -->
+                    <div class="jplist-panel box panel-top">
+                        <!-- filter by title -->
+						<div class="text-filter-box search-box">
+							<input 
+								data-path=".title" 
+								type="text" 
+								value="" 
+								placeholder="naam" 
+								data-control-type="textbox" 
+								data-control-name="title-filter" 
+								data-control-action="filter"
+							/>
+                            <i class="fa fa-search  jplist-icon"></i>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Data list -->
+            <div class="" id="employees-list">
+                <div class="repeat-employee" style="display: none;">
+                    <div class="row content-block">
+                        <div id="image" class="col-30">
+                            <img src="assets/images/no-image.jpg" alt="" />
+                        </div>
+                        <div class="text-left color-black col-70 team-info">
+                            <h3 id="name"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,228 @@
+<div data-page="detailpage" class="page" data-imageslider="true" data-script="makelaardij/detailpage" data-runner="detailpage" data-hideindicator="true">
+    <div class="navbar" style="display:block !important">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/makelaardij/home.html" style="height:44px;" data-destination="app_home" class="left"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div id="straat" class="crct-position"></div>
+        </div>
+    </div>
+    <a href="javascript: gotoStel()" class="floating-button">
+      <i class="icon icon-plus"></i>
+    </a>
+    <div class="page-content">
+        <div class="content-block">
+            <div class="content-block-inner">
+                <p class="pb-popup">
+                    <img id="banner-img" src="" width="100%" class="">
+                </p>
+                <p class="pb-indicator">
+                    <i class="fa fa-expand"></i>
+                </p>
+                <p class="pb-loader">
+                    <img id="loader-img" src="assets/images/loading.gif" width="100%" class="">
+                </p>
+            </div>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-home detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Soort woning</span>
+                                </div>
+                                <div class="row">
+                                    <span id="typesoort" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-calendar detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Bouwjaar</span>
+                                </div>
+                                <div class="row">
+                                    <span id="bouwjaar" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>                <div class="row">
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-calculator detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Woonoppervlakte</span>
+                                </div>
+                                <div class="row">
+                                    <span id="woonoppervlakte" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-car detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Garage</span>
+                                </div>
+                                <div class="row">
+                                    <span id="garage" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                  <div class="row">
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-user detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Aantal kamers</span>
+                                </div>
+                                <div class="row">
+                                    <span id="kamers" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-pie-chart detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Perceeloppervlakte</span>
+                                </div>
+                                <div class="row">
+                                    <span id="perceeloppervlakte" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                  <div class="row">
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-tree detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Tuin</span>
+                                </div>
+                                <div class="row">
+                                    <span id="tuin" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <div class="row">
+                            <div class="col-10">
+                                <i class="fa fa-home detail-icon"></i>
+                            </div>
+                            <div class="col-70">
+                                <div class="row">
+                                    <span class="desc-label">Woonruimte</span>
+                                </div>
+                                <div class="row">
+                                    <span id="woonruimte" class="desc-val"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row">
+                  <div class="col-50">
+                      <div class="row">
+                          <div class="col-10">
+                              <i class="fa fa-tag detail-icon"></i>
+                          </div>
+                          <div class="col-70">
+                              <div class="row">
+                                  <span class="desc-label">Energielabel</span>
+                              </div>
+                              <div class="row">
+                                  <span id="energielabel" class="desc-val"></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-50">
+                      <div class="row">
+                          <div class="col-10">
+                              <i class="fa fa-bell detail-icon"></i>
+                          </div>
+                          <div class="col-70">
+                              <div class="row">
+                                  <span class="desc-label">Status</span>
+                              </div>
+                              <div class="row">
+                                  <span id="status" class="desc-val"></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-100">
+                      <div class="row">
+                          <div class="col-10">
+                              <i class="fa fa-map-marker detail-icon"></i>
+                          </div>
+                          <div class="col-85">
+                              <div class="row">
+                                  <span class="desc-label">Ligging</span>
+                              </div>
+                              <div class="row">
+                                  <span id="ligging" class="desc-val"></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col-100 left-aligned">
+                        <span class="desc-label">Omschrijving</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100 justify-aligned">
+                        <span id="omschrijving" class="desc-val">Omschrijving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<title>CareFree</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'self' 'unsafe-inline' 'unsafe-eval'; script-src * 'self' 'unsafe-inline' 'unsafe-eval';" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="assets/css/framework7.material.min.css">
+	<link rel="stylesheet" href="assets/css/framework7.ios.min.css">
+	<link rel="stylesheet" href="assets/css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="assets/css/framework7.material.colors.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon/flaticon.css"> 
+    <link rel="stylesheet" href="assets/css/flaticon2/flaticon2.css"> 
+    <link rel="stylesheet" href="assets/css/flaticon3/flaticon3.css"> 
+    <link rel="stylesheet" href="assets/css/flaticonBrands/flaticonBrands.css"> 
+	<link rel="stylesheet" href="assets/css/lightgallery.min.css">
+	<link rel="stylesheet" href="assets/css/jplist.core.min.css">
+	<link rel="stylesheet" href="assets/css/jplist.list-grid-view.min.css">
+	<link rel="stylesheet" href="assets/css/jplist.pagination-bundle.min.css">
+
+    <link href="http://kendo.cdn.telerik.com/2017.2.621/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="http://kendo.cdn.telerik.com/2017.2.621/styles/kendo.default.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="overrides/style.css">
+    <link rel="stylesheet" href="assets/css/baloon.css">
+
+    </head>
+
+
+    <body>
+	<div class="preload-images">  
+        <img src="assets/images/icon.180.png" /> 
+    </div>
+
+    <div class="panel-overlay"></div>
+    <!-- Left Panel with Reveal effect -->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block" id="panelcontent">
+            <p><a href="#" class="close-panel">Close me</a></p>
+        </div>
+    </div>
+
+	<div class="views">
+	    <div class="view view-main">
+		<div class="pages navbar-fixed">
+		    <div class="page" data-page="loader">
+			<div class="page-content" style="display: block !important;">
+			    <div class="loader-logo" id="loader-logo"></div>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="assets/js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="overrides/override.js"></script>
+	<script type="text/javascript" src="assets/js/libs/everlive.all.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/jspdf.min.js"></script>
+    <script type="text/javascript" src="assets/js/libs/jspdf.plugin.autotable.js"></script>
+	<script type="text/javascript" src="assets/js/libs/framework7.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/jplist.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/lightgallery.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/progress.jsdo.4.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/libs/kendo.all.min.js"></script>
+    <script type="text/javascript" src="assets/js/libs/kendo.nl-NL.js"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyC6B-Uwq4nFGBa9ZNJskke8kwc0B5lZZuM&libraries=places"
+        data-src="assets/js/libs/maps.min.js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6B-Uwq4nFGBa9ZNJskke8kwc0B5lZZuM&libraries=places&callback=initAutocomplete"></script>!-->
+	<script type="text/javascript" src="assets/js/jsdo.js"></script>
+	<script type="text/javascript" src="assets/js/messages.js"></script>
+	<script type="text/javascript" src="assets/js/common.js"></script>
+	<script type="text/javascript" src="assets/js/db_operations.js"></script>
+	<script type="text/javascript" src="assets/js/runner.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+
+    </body>
+    <div id="canvas" class="row no" style="display:none">
+        <div class="navbar mnavbar">
+            <div class="theme-white" style="position: relative;z-index: 200;">
+                <div class="">
+                    <a href="javascript:void('0')" id="schademelder-link"> <i id="alter" class="icon icon-back"></i> </a>
+                </div>
+            </div>
+            <div style="top:5px !important;left:0px !important;position: relative;z-index: 100;" class="center">Handtekening</div>
+        </div>
+            <div class="content-block with-top" id="surface-holder">
+                <div id="toolbar" style="width:210px" class="row">
+                    <a id="clearMode" href="#" class="tlb-btn"><i class="fa fa-file-o fa-2x tlb-icon"></i></a>
+                    <a id="drawingMode" href="#" class="tlb-btn active"><i class="fa fa-pencil fa-2x tlb-icon"></i></a>
+                    <a id="eraseMode" href="#" class="tlb-btn"><i class="fa fa-eraser fa-2x tlb-icon"></i></a>
+                    <a id="emailCanvas" href="#" class="tlb-btn"><i class="fa fa-save fa-2x tlb-icon"></i></a>
+                </div>
+                <div id="surface" class="create_notes"></div>
+            </div>
+        </div>
+</html>

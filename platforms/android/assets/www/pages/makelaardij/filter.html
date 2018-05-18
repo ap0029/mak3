@@ -1,0 +1,164 @@
+<div data-page="filter" class="page" data-script="makelaardij/filter" data-runner="filter" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <!--<a href="pages/makelaardij/home.html" style="height:44px;" data-destination="app_home" class="left"> <i class="icon icon-back"></i> </a>!-->
+            </div>
+            <div class="crct-position">Filter</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p class="silver-text">Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="filter_form" action="#">
+            <div class="content-block asf-sec">
+                <div class="row">
+                    <div class="col-100 with-top list-block info-sec main-text">
+                        <ul class="text-left">
+                            <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-map-marker"></i></div>
+                                    <div class="item-inner">
+                                    <!--     <div class="item-title label">Naam<span class="required">*</span></div> -->
+                                        <div class="item-input">
+                                            <input id="autocomplete" name="autocomplete" class="padded-input"
+                                                placeholder="Plaats" onfocus="geolocate()" type="text" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="straal" name="straal"></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-automobile"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Straal</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-euro"></i></div>
+                                    <div class="item-inner">
+                                    <!--     <div class="item-title label">Naam<span class="required">*</span></div> -->
+                                        <div class="item-input">
+                                            <input id="prijs_van" name="prijs_van" class="padded-input" placeholder="Prijs van" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-euro"></i></div>
+                                    <div class="item-inner">
+                                    <!--     <div class="item-title label">Naam<span class="required">*</span></div> -->
+                                        <div class="item-input">
+                                            <input id="prijs_tot" name="prijs_tot" class="padded-input" placeholder="Prijs tot" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="woning" name="woning" multiple></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-home"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Soort Woning</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="woonoppervlakte" name="woonoppervlakte"></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-calculator"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Woonoppervlakte</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="aantalkamers" name="aantalkamers"></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-user"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Aantal Kamers</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="koophuur" name="koophuur" multiple></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-building"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Koop/Huur</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="ligging" name="ligging" multiple></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-map-marker"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Ligging</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                                    <select id="energielabel " name="energielabel" multiple></select>
+                                    <div class="item-content">
+                                        <div class="item-media"><i class="fa fa-tag"></i></div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Energielabel</div>
+                                            <div class="item-after">Maak uw keuze</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row content-block" style="margin-top: 0px">
+            <div class="col-100">
+                <div class="row">
+                    <div class="col-100">
+                        <button id="filter-btn" class="button button-big button-raised button-fill col-100"> Opslaan </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <button id="reset-btn" class="button button-big button-raised button-fill col-100"> Standaardwaarden herstellen </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

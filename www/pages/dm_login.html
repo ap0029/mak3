@@ -1,0 +1,56 @@
+<div data-page="dm_login" class="page" data-script="dm_login" data-runner="dm_login" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" data-destination="" class="mlink"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">OfficePortaal</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div id="loginModel" style="margin-top:40%;" class="form-view screen__content screen__content--form add-item-view">
+			<form name="mForm" id="mForm" class="mForm">
+                <div class="row">
+                    <div class="col-100 with-top list-block info-sec main-text">
+                        <ul class="text-left">
+                        <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-user"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Login</div>
+                                        <div class="item-input"> <input id="username" name="username" type="text" placeholder="Gebruikersnaam" value=""> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-lock"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-title label">Wachtwoord</div>
+                                        <div class="item-input"> <input id="password" name="password" type="password" placeholder="Wachtwoord" value=""> </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</form>
+            <div class="row content-block" style="margin-top: 0px">
+                <div class="col-100">
+                    <button id="versturen" onclick="dmPerformLogin(false)" class="button button-big button-raised button-fill col-100"> Versturen </button>
+                    <div id="devid" style="color:rgb(255,0,0)"></div>
+                </div>
+            </div>
+		</div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<div data-page="registration" class="page" data-script="makelaardij/registration" data-runner="registration" data-hideindicator="false">
+    <!-- <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/makelaardij/login.html" style="visibility:hidden;height:44px;" data-destination="app_home" class="left"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="crct-position">Gebruikersregistratie</div>
+        </div>
+    </div> -->
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p class="silver-text">Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="registration_form" action="#">
+          <div class="content-block top-logo">
+              <div class="row">
+                  <div class="col-100" id="home-logo">
+                      <img width="100%" height="100%" src="assets/images/logo.png" />
+                  </div>
+              </div>
+          </div>
+          <div class="content-block">
+              <div class="row">
+                  <div class="col-100">
+                      <p id="reg-title">Maak een account aan</p>
+                  </div>
+              </div>
+          </div>
+            <div class="content-block asf-sec">
+                <div class="row">
+                    <div class="col-100 with-top list-block info-sec main-text">
+                        <ul class="text-left">
+                            <!-- Text inputs -->
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-envelope"></i></div>
+                                    <div class="item-inner">
+                                   <!--      <div class="item-title label">Email</div> -->
+                                        <div class="item-input"> <input id="mkemail" class="padded-input" required="required"
+                                        name="mkemail" type="email" placeholder="Uw email"
+									/> </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-media"><i class="fa fa-key"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input id="mkpassword" class="padded-input" name="mkpassword"
+                                            type="password" placeholder="Wachtwoord" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="cpasssection">
+                                <div id="cpass-holder" class="item-content bordered-input">
+                                    <div class="item-media"><i id="cpass-icon" class="fa fa-map"></i></div>
+                                    <div class="item-inner">
+                                        <div class="item-input">
+                                            <input id="mkcpassword" class="padded-input" name="mkcpassword"
+                                            type="password" placeholder="Bevestig wachtwoord" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="row content-block" style="margin-top: 0px">
+            <div class="col-100">
+            <button id="reg-user" disabled=true class="button button-big button-raised button-fill col-100"> Bevestigen </button>
+            </div>
+            <div style="margin-top:20px;" class="col-100">
+            <button id="log-user" class="button button-big button-raised button-fill col-100" style="text-transform:none !important"> Inloggen met bestaande gebruiker </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.yesco.app.Rhenen" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>GenericTemplate</name>
+  <description>
+ Generic v3
+</description>
+  <author email="Yes" href="">
+ Yes
+</author>
+  <content src="index.html"/>
+  <access origin="*"/>
+<allow-navigation href="*" /> <allow-intent href="http://*/*"/> <allow-intent href="https://*/*"/> <allow-intent href="tel:*"/> <allow-intent href="sms:*"/> <allow-intent href="mailto:*"/> <allow-intent href="geo:*"/>
+<platform name="android">
+<allow-intent href="market:*"/>
+<preference name="splashscreen" value="splashscreen"/> <preference name="splashScreenDelay" value="10000"/>
+  </platform>
+  <platform name="ios">
+<preference name="deployment-target" value="8.0" />
+<preference name="prerendered-icon" value="false" />
+<allow-intent href="itms:*"/> <allow-intent href="itms-apps:*"/>
+<allow-navigation href="*" />
+<config-file parent="CFBundleShortVersionString" target="*-Info.plist" mode="replace">
+<string>55</string> </config-file>
+<config-file parent="CFBundleVersion" target="*-Info.plist" mode="replace"> <string>2018.0510.1153</string>
+</config-file>
+<custom-config-file parent="CFBundleIconFile" target="*-Info.plist" mode="delete"/>
+<!-- iPhone and iPod touch -->
+
+<config-file target="*-Info.plist" parent="ITSAppUsesNonExemptEncryption" mode="add"> <false/>
+</config-file>
+<config-file target="*-Info.plist" parent="UIPrerenderedIcon" mode="add">
+      <false/>
+    </config-file>
+<custom-config-file platform="ios" target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+<string>Voor het versturen van een voicebericht maken we gebruik van uw microfoon om het bericht op te nemen</string>
+    </custom-config-file>
+<custom-config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+<string>Uw locatie wordt gebruikt voor het schadeformulier (indien van toepassing)</string>
+    </custom-config-file>
+       </platform>
+<plugin name="com.phonegap.plugins.barcodescanner" spec="/Users/builder/.TelerikPluginsCache/com.phonegap.plugins.barcodescanner/6.0.5">
+<variable name="CAMERA_USAGE_DESCRIPTION" value="QR code scanner om direct naar web pagina's te kunnen gaan"/>
+</plugin>
+<plugin name="com.synconset.imagepicker" spec="/Users/builder/.TelerikPluginsCache/com.synconset.imagepicker/2.1.7">
+<variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="Voor het plaatsen van een handtekening in het schademelder formulier"/>
+</plugin>
+<plugin name="cordova-plugin-camera" spec="./cordova-plugin-camera">
+<variable name="CAMERA_USAGE_DESCRIPTION" value="Camera wordt gebruikt om afbeeldingen te maken"/>
+<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Foto galerij wordt gebruikt om de door u geselecteerde afbeeldingen te versturen"/>
+</plugin>
+
+<plugin name="cordova-plugin-geolocation" spec="./cordova-plugin-geolocation">
+<variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Voor het schademelder formulier hebben we uw GPS locatie nodig voor locatiebepaling"/>
+</plugin>
+<plugin name="cordova-plugin-media" spec="./cordova-plugin-media-master">
+<variable name="MICROPHONE_USAGE_DESCRIPTION" value="Voor het versturen van een voicebericht maken we gebruik van uw microfoon om het bericht op te nemen"/>
+</plugin>
+<plugin name="com.ionic.keyboard" spec="/Users/builder/.TelerikPluginsCache/com.ionic.keyboard/2.0.1"/>
+<plugin name="com.telerik.plugins.wkwebview" spec="/Users/builder/.TelerikPluginsCache/com.telerik.plugins.wkwebview/0.6.10">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-device" spec="./cordova-plugin-device">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-dialogs" spec="./cordova-plugin-dialogs">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-network-information" spec="./cordova-plugin-network- information">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-splashscreen" spec="./cordova-plugin-splashscreen">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-statusbar" spec="./cordova-plugin-statusbar">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-whitelist" spec="./cordova-plugin-whitelist">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="nl.x-services.plugins.actionsheet" spec="/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.actionsheet/2.3.3">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="nl.x-services.plugins.socialsharing" spec="/Users/builder/.TelerikPluginsCache/nl.x-services.plugins.socialsharing/5.1.1">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="nl.x-services.plugins.toast" spec="/Users/builder/.TelerikPluginsCache/nl.x- services.plugins.toast/2.5.2">
+
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="org.apache.cordova.labs.keyboard" spec="./org.apache.cordova.labs.keyboard">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="com.telerik.cordovaPlatformSpecificFiles" spec="./cordova-platform-specific- files">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-file" spec="./cordova-plugin-file-master">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="cordova-plugin-inappbrowser-modified-1.2.0" spec="./cordova-plugin- inappbrowser-modified-1.2.0">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/>
+</plugin>
+<plugin name="onesignal-cordova-plugin" spec="./onesignal-cordova-plugin">
+<variable name="WKWEBVIEW_SERVER_PORT" value="12344"/> </plugin>
+</widget>

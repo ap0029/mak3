@@ -1,0 +1,179 @@
+<div data-page="zend_photo" class="page" data-script="zend_photo" data-runner="zend_foto">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Scan en Zend</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div id="section1">
+            <div class="row  with-top zen-text">
+                <div class="col-80 with-top text-left content-block ">Maak een foto van uw document en mail het naar ons kantoor. </div>
+                <div class="col-20 content-block"> <a id="gear" href="#"><i class="fa fa-gear fa-2x"></i></a> </div>
+            </div>
+            <div class="row">
+                <div class="col-100 content-block with-top list-block media-list zen-field">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="user_message" type="text" placeholder="Stap 1 Geef hier uw bericht (optioneel)"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="pdf_listing" style="display: none;">
+                            <a href="#" class="item-link smart-select" data-open-in="picker" data-back-on-select="true" data-picker-close-text="Sluiten">
+                            <select name="image_pdf">
+                                </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title"> Maak uw keuze </div>
+                                            <div class="item-after"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-100 content-block with-top list-block" > 
+                    <a class="camera-btn" id="select_foto"> Stap 2 Maak uw foto </a>
+                </div>
+                <div id="image_listing" class="col-100 content-block with-top list-block"> 
+                    <div class="col-100"> 
+                        <img id="logoo" width="100%" height="100%" src="assets/images/logo.png" /> 
+                    </div><br>
+                    <div style="display:none" class="col-100 repeat-image"> 
+                        <img id="logoo" width="100%" height="100%" src="assets/images/logo.png" /> 
+                    </div>
+                </div>
+                <div class="col-100 content-block with-top list-block" style="display: block !important;">
+                    <a id="mail_foto" class="camera-btn"> Stap 3 Mail uw foto </a>
+                </div>
+            </div>
+        </div>
+        <!-- Section 2 -->
+        <div id="section2" style="display:none;">
+            <div class="row with-top">
+                <div class="col-80"></div>
+                <div class="col-20" style="padding:10px"> <a id="close" href="#"><i class="fa fa-close fa-2x"></i></a> </div>
+            </div>
+            <div class="row">
+                <div class="col-100 content-block with-top list-block no-bottom-margin">
+                    <ul>
+                        <!-- Single chekbox item -->
+                        <li> <label class="label-checkbox item-content">
+                            <!-- Checked by default -->
+                            <input type="checkbox" id="enable_pdf" value="functionaliteit">
+                            <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                            <div class="item-title">Functionaliteit inschakelen</div>
+                            </div>
+                        </label> </li>
+                        <li> <label class="label-checkbox item-content">
+                            <input type="checkbox" id="send_pdf" value="verzend">
+                            <div class="item-media">
+                            <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                            <div class="item-title">Verzend PDF bestand</div>
+                            </div>
+                        </label> </li>
+                    </ul>
+                </div>
+                <div style="padding:15px"> <a id="open_fields" href=""><i style="color:#56a9ff;" class="fa fa-plus-square fa-2x"></i></a> </div>
+                <div id="has_record" class="col-100 content-block with-top list-block" style="display:none">
+                    <table style="border: 1px solid black; border-collapse: collapse; padding:10px;" id="table">
+                        <tr class="repeat-row" style="display:none">
+                            <td class="name"></td>
+                            <td class="email"></td>
+                            <td class="delete"><i class="fa fa-trash-o" style="color:red;"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="no_record" class="col-100 content-block with-top list-block" style=" display:none">
+                    <div style="border-style:solid; border-width:1px; padding: 10px;"> Geen data opgeslagen </div>
+                </div>
+            </div>
+            <div class="row fields" style="display: none;">
+                <div class="col-100 content-block with-top list-block">
+                    <div class="row">
+                        <div class="col-60 with-top">
+                            <h3>Platform?</h3> </div>
+                        <div class="col-40">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title"></div>
+                                    <div class="">
+                                        <!-- item-input --><label class="label-switch">
+                                        <input type="checkbox" name="platform"/>
+                                        <div class="checkbox"> </div>
+                                    </label> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="text-left for_pdf">
+                        <!-- Text inputs -->
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-edit"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="name" type="text" placeholder="Naam"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-edit"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="email" type="email" placeholder="E-mail adres"> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="text-left for_plateform" style="display: none;">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-edit"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="name" type="text" placeholder="Naam"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-edit"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="client_id" type="text" placeholder="KlantId"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-user"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="user_name" type="text" placeholder="Gebruikersnaam"> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"><i class="fa fa-lock"></i></div>
+                                <div class="item-inner">
+                                    <div class="item-input"> <input id="password" type="password" placeholder="Wachtwoord"> </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-100 content-block with-top list-block"> <button id="opslaan" class="button button-big button-raised button-fill col-100"> Opslaan </button> </div>
+            </div>
+        </div>
+    </div>
+</div>

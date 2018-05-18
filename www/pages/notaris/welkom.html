@@ -1,0 +1,37 @@
+<div data-page="welkom" class="page no-navbar" data-runner="welkom">
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+        <div class="content-block">
+            <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+        </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="berichten-profiel-fragment">
+            <div data-load-fragment="pages/notaris/fragments/berichten_profiel_fragment.html"></div>
+            <div class="content-block row"> <button class="open-indicator button button-big button-raised button-fill col-100" id="berichten-profiel">Volgende</button> </div>
+        </div>
+        <div class="alerts-fragment" style="display:none">
+            <div data-load-fragment="pages/notaris/fragments/alerts_fragment.html"></div>
+            <div class="content-block row"> <button class="open-indicator button button-big button-raised button-fill col-100" id="alerts">Start</button> </div>
+        </div>
+    </div>
+    <div class="popup popup-welkom modal-in overlay ">
+        <div class="row content-block">
+            <div class="col-100">
+                <div class="info-circle"> <i class="fa fa-info fa-4x"> </i> </div>
+            </div>
+        </div>
+        <div class="row content-block heading welkom-text">
+            <h1 class="col-100"> Welkom! </h1> 
+            <p id="text"> </p>
+            <p style="color:red; width: 100%; font-weight: bold;" class="hide" id="message"></p>
+            <button id="toestaan" class="button button-big button-raised button-fill col-100 hide"> Toestaan </button>
+        </div>
+	<div class="bottom-fixed next hide">
+	    <button class="close-popup button button-big button-raised button-fill bottom-fixed"> Volgende </button>
+	</div>
+    </div>
+</div>

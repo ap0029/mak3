@@ -1,0 +1,74 @@
+<div data-page="mijn_berichtenarchief" class="page" data-script="berichtenarchief" data-runner="berichtenarchief" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="pages/meer.html" class="link icon-only"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">Mijn Berichtenarchief</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-100 list-block with-top  content-block search-area">
+                <div id="demo" class="box jplist">
+                    <!-- ios button: show/hide panel -->
+                    <div class="jplist-ios-button"> <i class="fa fa-sort"></i> Bericht </div>
+                    <!-- panel -->
+                    <div class="jplist-panel box panel-top">
+                        <!-- items per page dropdown -->
+                        <div class="jplist-drop-down" data-control-type="items-per-page-drop-down" data-control-name="paging"
+                            data-control-action="paging">
+                            <ul>
+                                <li><span data-number="5"> 5 per pagina </span></li>
+                                <li><span data-number="7" data-default="true"> 7 per pagina </span></li>
+                                <li><span data-number="10"> 10 per pagina </span></li>
+                                <li><span data-number="all"> Alles bekijken </span></li>
+                            </ul>
+                        </div>
+                        <!-- sort dropdown -->
+                        <div class="jplist-drop-down" data-control-type="sort-drop-down" data-control-name="sort" data-control-action="sort"
+                            data-datetime-format="{month}/{day}/{year}">
+                            <ul>
+                                <li><span data-path=".title" data-default="true" data-order="asc" data-type="text">Titel A-Z</span></li>
+                                <li><span data-path=".title" data-order="desc" data-type="text">Titel Z-A</span></li>
+                            </ul>
+                        </div>
+                        <!-- filter by title -->
+						<div class="text-filter-box search-box">
+							<input 
+								data-path=".title" 
+								type="text" 
+								value="" 
+								placeholder="Filter op titel" 
+								data-control-type="textbox" 
+								data-control-name="title-filter" 
+								data-control-action="filter"
+							/>
+                            <i class="fa fa-search  jplist-icon"></i>
+						</div>
+                        <!-- Data list -->
+                        <div class="list box" id="document_listing" >
+                            <div class="repeat_message_archieve list-item" style="display: none;">
+                                <a href="#" class="url">
+                                    <div class="item-inner block">
+                                        <div class="item-title title "><p class="title"></p></div>
+                                        <div class="item-title date"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- pagination results -->
+                        <div class="pagination">
+                        <div class="jplist-label" data-type="Page {current} of {pages}" data-control-type="pagination-info"
+                            data-control-name="paging" data-control-action="paging"> </div>
+                        <!-- pagination control -->
+                        <div class="jplist-pagination" data-range="3" data-control-type="pagination" data-control-name="paging" data-control-action="paging">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

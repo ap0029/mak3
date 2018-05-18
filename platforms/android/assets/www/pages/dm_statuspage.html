@@ -1,0 +1,45 @@
+<div data-page="dm_statuspage" class="page" data-script="dm_statuspage" data-runner="dm_statuspage" data-hideindicator="false">
+    <div class="navbar">
+        <div class="navbar-inner theme-white">
+            <div class="left">
+                <a href="#" data-destination="pages/dm_review.html" class="mlink"> <i class="icon icon-back"></i> </a>
+            </div>
+            <div class="center">OfficePortaal</div>
+        </div>
+    </div>
+    <div class="modal-overlay"> </div>
+    <div class="popover popover-about">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="content-block">
+                <p>Met uw gegevens kunnen wij deze App niet alleen informatiever en gebruiksvriendelijker maken: het biedt u ook een sneller en groter gebruiksgemak. Uiteraard worden uw gegevens vertrouwelijk behandeld.</p>
+            </div>
+        </div>
+    </div>
+    
+	<div data-role="content" id="dmstatuspage_mobilecontainer" name="dmstatuspage_mobilecontainer" class="dmstatuspage_mobilecontainer" dsid="dmstatuspage_mobilecontainer" data-theme="f">
+		<div class="row">
+            <div class="col-100 with-top list-block btm-sec">
+                <p id="action-text" class="with-top text-left"></p>
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-input"> 
+                                    <textarea id="tacomment" name="tacomment" type="text" placeholder="Opmerking"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row content-block" style="margin-top: 0px">
+                            <div class="col-100">
+                                <button id="btsubmit" onclick="updateStatus()" class="button button-big button-raised button-fill col-100"> Versturen </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
+</div>

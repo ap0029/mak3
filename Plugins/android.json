@@ -1,0 +1,80 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "com.telerik.plugins.wkwebview": {
+            "WKWEBVIEW_SERVER_PORT": "12344",
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "nl.x-services.plugins.actionsheet": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "nl.x-services.plugins.toast": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "org.apache.cordova.labs.keyboard": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "com.telerik.cordovaPlatformSpecificFiles": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "cordova-plugin-inappbrowser-modified-1.2.0": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        },
+        "onesignal-cordova-plugin": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.yesco.app.Rhenen"
+        }
+    }
+}
